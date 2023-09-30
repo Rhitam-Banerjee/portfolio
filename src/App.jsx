@@ -1,7 +1,17 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import { Navbar, Hero } from "./Components";
 
 const App = () => {
-  return <div className="bg-blue-500">App</div>;
+  return (
+    <BrowserRouter>
+      <div className="relative z-0 bg-blue-200">
+        <div className="container">
+          <Navbar />
+          <Hero />
+        </div>
+      </div>
+    </BrowserRouter>
+  );
 };
 
 export default App;

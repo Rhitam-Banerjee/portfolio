@@ -1,2 +1,3 @@
 import RobotCanvas from "./Robot";
-export { RobotCanvas };
+import EarthCanvas from "./Earth";
+export { RobotCanvas, EarthCanvas };

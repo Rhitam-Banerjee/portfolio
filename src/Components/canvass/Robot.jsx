@@ -1,5 +1,5 @@
-import { Suspense, useRef, useState } from "react";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { useState } from "react";
+import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../Loader";
 
@@ -10,7 +10,7 @@ const RobotCanvas = (isMobile) => {
       <hemisphereLight intensity={1} groundColor="black" />
       <ambientLight intensity={2} />
       <pointLight intensity={15} position={[0, 1, 3]} />
-      <spotLight intensity={15} position={[0, 1, -3]} color={"yellow"} />
+      <spotLight intensity={15} position={[0, 1, -3]} />
       <primitive
         object={nodes._rootJoint}
         scale={0.7}
@@ -115,10 +115,10 @@ const Robot = () => {
       camera={{ position: [0, 0, 10], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      {/* <Suspense fallback={<CanvasLoader />}>
-        </Suspense> */}
+      {/* <Suspense fallback={<CanvasLoader />}> */}
       <OrbitControls enableZoom={false} />
       <RobotCanvas isMobile={isMobile} />
+      {/* </Suspense> */}
     </Canvas>
   );
 };

@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import CanvasLoader from "../Loader";
 
-const RobotCanvas = (isMobile) => {
+const RobotCanvas = ({ isMobile }) => {
   const { nodes, materials } = useGLTF("./Robot_GLTF/scene.gltf");
   return (
     <mesh>
@@ -13,9 +13,9 @@ const RobotCanvas = (isMobile) => {
       <spotLight intensity={15} position={[0, 1, -3]} />
       <primitive
         object={nodes._rootJoint}
-        scale={0.7}
+        scale={isMobile ? 0.75 : 1}
         position={[0, 0, 0]}
-        rotation={[-1.2, 0, -0.2]}
+        rotation={[-1.5, 0, -0.2]}
       />
       <skinnedMesh
         geometry={nodes.Object_7.geometry}
@@ -107,6 +107,19 @@ const RobotCanvas = (isMobile) => {
 };
 const Robot = () => {
   const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 860px)");
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <Canvas
       frameloop="demand"
@@ -116,7 +129,11 @@ const Robot = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       {/* <Suspense fallback={<CanvasLoader />}> */}
-      <OrbitControls enableZoom={false} />
+      <OrbitControls
+        enableZoom={false}
+        maxPolarAngle={Math.PI / 2}
+        minPolarAngle={Math.PI / 2}
+      />
       <RobotCanvas isMobile={isMobile} />
       {/* </Suspense> */}
     </Canvas>

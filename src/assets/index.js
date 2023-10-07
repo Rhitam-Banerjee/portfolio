@@ -1,2 +1,8 @@
-import logo from "./logo.png";
-export { logo };
+import logoWhite from "./logoWhite.svg";
+import logoBlack from "./logoBlack.svg";
+import user from "./user-circle.svg";
+import contact from "./telegram-plane.svg";
+import works from "./works.svg";
+import hamburger from "./hamburger.svg";
+import close from "./close.svg";
+export { logoWhite, logoBlack, user, contact, works, hamburger, close };

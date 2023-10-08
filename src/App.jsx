@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Navbar, Hero, BottomNavar } from "./Components";
+import Cursor from "./Components/Cursor/Cursor";
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -16,6 +17,7 @@ const App = () => {
   }, []);
   return (
     <BrowserRouter>
+      {!isMobile && <Cursor />}
       <div className="relative z-0">
         <div>
           <Navbar />

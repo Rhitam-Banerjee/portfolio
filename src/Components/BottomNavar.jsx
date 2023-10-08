@@ -7,8 +7,8 @@ const BottomNavar = () => {
     <div className="fixed flex flex-col-reverse bottom-10 left-1/2 w-max max-w-7xl justify-center items-center translate-x-[-50%]">
       <div
         className={`${
-          toggle ? "shadow-none" : "shadow-lg"
-        } hamburger-container bg-white w-max px-2 py-1 rounded-md cursor-pointer hover:scale-105 transition-all ease-linear delay-50`}
+          toggle ? "shadow-none" : "shadow-lg bg-white"
+        } hamburger-container w-max px-2 py-1 rounded-md cursor-pointer hover:scale-105 transition-all ease-linear delay-50`}
         onClick={() => setToggle(!toggle)}
       >
         <img src={`${toggle ? close : hamburger}`} alt="menu" className="h-7" />

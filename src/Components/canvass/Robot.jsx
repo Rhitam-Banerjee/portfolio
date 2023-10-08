@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { OrbitControls, useGLTF } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import CanvasLoader from "../Loader";
 
 const RobotCanvas = ({ isMobile }) => {
@@ -133,6 +133,7 @@ const Robot = () => {
         enableZoom={false}
         maxPolarAngle={Math.PI / 2}
         minPolarAngle={Math.PI / 2}
+        autoRotate
       />
       <RobotCanvas isMobile={isMobile} />
       {/* </Suspense> */}

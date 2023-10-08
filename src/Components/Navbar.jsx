@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
-import { logoWhite, logoBlack } from "../assets";
+import { logo } from "../assets";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [toggle, setToggle] = useState(false);
@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -25,8 +25,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 transition-all ease-linear delay-100 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed top-0 z-20 bg-white_transparant ${
+        scrolled ? "shadow-md" : "shadow-none"
       }`}
     >
       <div className="w-full flex sm:justify-center justify-between items-center max-w-7xl mx-auto">
@@ -38,14 +38,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logoBlack} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
         <ul className="list-none sm:hidden flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-black" : "text-secondary"
               } hover:text-black text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >

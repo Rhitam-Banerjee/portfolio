@@ -12,13 +12,15 @@ const Hero = () => {
         className={`absolute mx-auto top-1/2 sm:top-[120px] translate-y-[-50%] sm:w-[80%] w-1/2 max-w-7xl`}
       >
         <div>
-          <h1>
+          <h1 className={`${styles.heroHeadText} text-tertiary sm:mt-10`}>
             Hi, I'm <span>Rhitam</span>
           </h1>
-          <p>I develop user Interface and web applications.</p>
+          <p className={`${styles.heroSubText} text-primary`}>
+            I develop user Interface and web applications.
+          </p>
         </div>
       </div>
-      <div className="absolute right-0 sm:bottom-[20%] bottom-1/2 translate-y-[50%] ml-auto sm:w-full w-1/2">
+      <div className="sm:translate-y-[30%] translate-y-[20%] sm:w-full w-1/2 ml-auto">
         <RobotCanvas />
       </div>
       <div className="sm:hidden absolute bottom-32 left-1/2 flex justify-center items-center translate-x-[-50%]">

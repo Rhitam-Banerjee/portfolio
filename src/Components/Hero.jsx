@@ -2,6 +2,7 @@ import React from "react";
 import RobotCanvas from "./canvass/Robot";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
+import Typewriter from "./Cursor/Typewriter/Typewriter";
 
 const Hero = () => {
   return (
@@ -17,12 +18,12 @@ const Hero = () => {
           >
             Hi, I'm <br /> <span>Rhitam</span>
           </h1>
-          <p className={`${styles.heroSubText} text-primary`}>
-            I develop user Interface and web applications.
+          <p className={`${styles.heroSubText} pl-1 text-primary w-max`}>
+            A <Typewriter />
           </p>
         </div>
       </div>
-      <div className="sm:translate-y-[41%] translate-y-[20%] sm:w-full w-1/2 ml-auto sm:max-h-[600px]">
+      <div className="sm:translate-y-[41%] sm:translate-x-0 translate-x-5 translate-y-[20%] sm:w-full w-1/2 ml-auto sm:max-h-[600px]">
         <RobotCanvas />
       </div>
       <div className="sm:hidden absolute bottom-32 left-1/2 flex justify-center items-center translate-x-[-50%]">

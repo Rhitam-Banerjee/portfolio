@@ -22,6 +22,15 @@ export default {
       backgroundImage: {
         "hero-Image": "url('')",
       },
+      keyframes: {
+        blink: {
+          "0%,100%": { transform: "scale(0)" },
+          "50%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        blink: "blink 1s ease-in-out infinite 3.5s",
+      },
     },
   },
   plugins: [],

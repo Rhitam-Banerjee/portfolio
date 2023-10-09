@@ -12,3 +12,4 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+export const roles = ["Developer", "Designer"];

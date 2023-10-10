@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function useMousePosition() {
-  const changeShapeCursorElements = ["h1", "span", "p", "a", "img"];
+  const changeShapeCursorElements = ["h1", "span", "p", "li", "a", "img", "b"];
   const [mousePosition, setMousePosition] = useState({ x: null, y: null });
   const [changeShape, setChangeShape] = useState(false);
   useEffect(() => {
@@ -15,7 +15,6 @@ export default function useMousePosition() {
         : setChangeShape(false);
     };
     document.addEventListener("mousemove", mouseMoveHandler);
-
     return () => {
       document.removeEventListener("mousemove", mouseMoveHandler);
     };

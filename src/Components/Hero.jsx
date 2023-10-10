@@ -2,7 +2,7 @@ import React from "react";
 import RobotCanvas from "./canvass/Robot";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import Typewriter from "./Cursor/Typewriter/Typewriter";
+import Typewriter from "./Typewriter/Typewriter";
 
 const Hero = () => {
   return (
@@ -18,7 +18,9 @@ const Hero = () => {
           >
             Hi, I'm <br /> <span>Rhitam</span>
           </h1>
-          <p className={`${styles.heroSubText} pl-1 text-primary w-max`}>
+          <p
+            className={`${styles.heroSubText} mr-auto sm:m-auto pl-1 text-primary w-max`}
+          >
             A <Typewriter />
           </p>
         </div>

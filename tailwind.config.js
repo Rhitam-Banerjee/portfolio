@@ -9,6 +9,7 @@ export default {
         tertiary: "#FFAF38",
         white_transparant: "rgba(255,255,255,0.95)",
         primary_transparant: "rgba(172, 197, 197, 0.95)",
+        primary_transparant_max: "rgba(172, 197, 197, 0.4)",
         secondary_transparant: "rgba(88, 139, 139, 0.95)",
         tertiary_transparant: "rgba(236, 148, 16, 0.95)",
       },
@@ -24,8 +25,8 @@ export default {
       },
       keyframes: {
         blink: {
-          "0%,100%": { transform: "scale(0)" },
-          "50%": { transform: "scale(1)" },
+          "0%,100%": { opacity: 0 },
+          "50%": { opacity: 1 },
         },
       },
       animation: {

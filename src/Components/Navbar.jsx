@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 50) {
+      if (scrollTop > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -25,11 +25,11 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 bg-white_transparant ${
-        scrolled ? "shadow-md" : "shadow-none"
+      } w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "!bg-white_transparant shadow-md" : "shadow-none"
       }`}
     >
-      <div className="w-full flex sm:justify-center justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex sm:justify-center justify-between items-center max-w-5xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"

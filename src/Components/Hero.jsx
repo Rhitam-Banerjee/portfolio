@@ -7,10 +7,10 @@ import Typewriter from "./Typewriter/Typewriter";
 const Hero = () => {
   return (
     <section
-      className={`${styles.paddingX} relative w-full max-w-7xl h-screen mx-auto flex flex-row gap-5 sm:mt-[100px]`}
+      className={`${styles.paddingX} relative w-full max-w-5xl h-screen mx-auto flex flex-row gap-5`}
     >
       <div
-        className={`absolute mx-auto top-1/2 sm:top-[120px] translate-y-[-50%] sm:w-[80%] w-1/2 max-w-7xl`}
+        className={`absolute mx-auto top-1/2 sm:top-[180px] translate-y-[-50%] sm:w-[80%] w-1/2 max-w-7xl leading-[60px]`}
       >
         <div>
           <h1

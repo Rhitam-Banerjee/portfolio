@@ -1,5 +1,4 @@
 import useMousePosition from "./useMousePosition";
-
 const Cursor = () => {
   const { x, y } = useMousePosition().mousePosition;
   const changeShape = useMousePosition().changeShape;

@@ -6,4 +6,15 @@ import contact from "./telegram-plane.svg";
 import works from "./works.svg";
 import hamburger from "./hamburger.svg";
 import close from "./close.svg";
-export { logo, logoWhite, logoBlack, user, contact, works, hamburger, close };
+import heroBg from "./herobg.png";
+export {
+  logo,
+  logoWhite,
+  logoBlack,
+  user,
+  contact,
+  works,
+  hamburger,
+  close,
+  heroBg,
+};

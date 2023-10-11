@@ -21,7 +21,7 @@ export default {
         sm: { max: "640px" },
       },
       backgroundImage: {
-        "hero-Image": "url('./src/assets/herobg.png')",
+        "hero-Image": "url('./assets/herobg.png')",
       },
       keyframes: {
         blink: {

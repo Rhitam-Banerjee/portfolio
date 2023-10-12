@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { logo } from "../assets";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const [toggle, setToggle] = useState(false);
+  // const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState("");
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 30) {
         setScrolled(true);
       } else {
         setScrolled(false);

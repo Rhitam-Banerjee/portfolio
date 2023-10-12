@@ -1,3 +1,4 @@
+import React from "react";
 import RobotCanvas from "./canvass/Robot";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -6,7 +7,7 @@ import Typewriter from "./Typewriter/Typewriter";
 const Hero = () => {
   return (
     <section
-      className={`${styles.paddingX} relative w-full max-w-5xl h-screen mx-auto flex flex-row gap-5 sm:justify-center`}
+      className={`${styles.paddingX} relative w-full max-w-5xl h-screen mx-auto flex flex-row gap-5`}
     >
       <div
         className={`absolute mx-auto top-1/2 sm:top-[180px] translate-y-[-50%] sm:w-[80%] w-1/2 max-w-7xl leading-[60px]`}
@@ -15,7 +16,7 @@ const Hero = () => {
           <h1
             className={`${styles.heroHeadText} mr-auto sm:m-auto w-max text-tertiary`}
           >
-            Hi, I&apos;m <br /> <span>Rhitam</span>
+            Hi, I'm <br /> <span>Rhitam</span>
           </h1>
           <p
             className={`${styles.heroSubText} mr-auto sm:m-auto pl-1 text-primary w-max`}

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { close, hamburger } from "../assets";
 import { navLinks } from "../constants";
 const BottomNavar = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="fixed flex flex-col-reverse bottom-10 left-1/2 w-max max-w-7xl justify-center items-center translate-x-[-50%]">
+    <div className="fixed flex flex-col-reverse bottom-10 left-1/2 w-max max-w-7xl justify-center items-center translate-x-[-50%] z-50">
       <div
         className={`${
           toggle ? "shadow-none" : "shadow-lg bg-white"

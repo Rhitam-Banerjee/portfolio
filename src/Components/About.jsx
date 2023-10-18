@@ -3,6 +3,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils";
 import { styles } from "../styles";
 import ServiceCard from "./Services";
+import { SectionWrapper } from "../HOC";
 
 const About = () => {
   return (
@@ -16,14 +17,14 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className={`max-w-6xl mx-auto ${styles.paddingX}`}
+        className={`max-w-6xl mx-auto sm:text-center ${styles.paddingX}`}
       >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolor
         alias explicabo soluta in velit expedita molestiae? Itaque, unde
         accusantium.
       </motion.p>
       <div
-        className={`mt-20 flex flex-wrap gap-10 max-w-6xl mx-auto ${styles.paddingX}`}
+        className={`mt-20 grid grid-cols-2 sm:grid-cols-1 gap-10 max-w-6xl mx-auto ${styles.paddingX}`}
       >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
@@ -33,4 +34,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, "about");

@@ -10,7 +10,7 @@ const About = () => {
     <>
       <motion.div
         variants={textVariant()}
-        className={`${styles.paddingX} max-w-6xl mx-auto w-full flex flex-col sm:justify-center items-center`}
+        className={`max-w-6xl mx-auto w-full flex flex-col sm:justify-center sm:items-center`}
       >
         <p className={`${styles.heroSubText} text-primary`}>Introduction</p>
         <h2 className={`${styles.heroHeadText} text-secondary`}>Overview</h2>

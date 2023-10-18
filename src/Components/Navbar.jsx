@@ -29,7 +29,7 @@ const Navbar = () => {
         scrolled ? "!bg-white_transparant shadow-md" : "shadow-none"
       }`}
     >
-      <div className="w-full flex sm:justify-center justify-between items-center max-w-5xl mx-auto">
+      <div className="w-full flex sm:justify-center justify-between items-center max-w-6xl mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -45,8 +45,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-black" : "text-secondary"
-              } hover:text-black text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-tertiary" : "text-secondary"
+              } hover:text-tertiary text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

@@ -1,7 +1,8 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Navbar, Hero, BottomNavar } from "./Components";
 import Cursor from "./Components/Cursor/Cursor";
+import About from "./Components/About";
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -18,12 +19,13 @@ const App = () => {
   return (
     <BrowserRouter>
       {!isMobile && <Cursor />}
-      <div className="relative z-0 bg-hero-Image bg-center bg-fixed">
+      <div className="relative z-0 bg-center bg-fixed">
         <div>
           <Navbar />
           <Hero />
           {isMobile && <BottomNavar />}
         </div>
+        <About />
       </div>
     </BrowserRouter>
   );

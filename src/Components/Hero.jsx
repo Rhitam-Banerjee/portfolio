@@ -6,14 +6,14 @@ import Typewriter from "./Typewriter/Typewriter";
 const Hero = () => {
   return (
     <section
-      className={`${styles.paddingX} relative w-full max-w-5xl h-screen mx-auto flex flex-row gap-5 sm:justify-center`}
+      className={`${styles.paddingX} relative w-full max-w-6xl h-screen mx-auto flex flex-row gap-5 sm:justify-center`}
     >
       <div
         className={`absolute mx-auto top-1/2 sm:top-[180px] translate-y-[-50%] sm:w-[80%] w-1/2 max-w-7xl leading-[60px]`}
       >
         <div>
           <h1
-            className={`${styles.heroHeadText} mr-auto sm:m-auto w-max text-tertiary`}
+            className={`${styles.heroHeadText} mr-auto sm:m-auto w-max text-secondary`}
           >
             Hi, I&apos;m <br /> <span>Rhitam</span>
           </h1>

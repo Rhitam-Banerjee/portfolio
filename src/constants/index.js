@@ -12,4 +12,22 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-export const roles = ["Developer", "Designer"];
+export const services = [
+  {
+    title: "Web Developer",
+    // icon: web,
+  },
+  {
+    title: "React Native Developer",
+    // icon: mobile,
+  },
+  {
+    title: "Backend Developer",
+    // icon: backend,
+  },
+  {
+    title: "Content Creator",
+    // icon: creator,
+  },
+];
+// export { navLinks, services };

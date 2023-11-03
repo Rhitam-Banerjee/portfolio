@@ -1,6 +1,7 @@
 import logo from "./Logo.svg";
 import logoWhite from "./LogoWhite.svg";
 import logoBlack from "./LogoBlack.svg";
+import logoTer from "./LogoTertiary.svg";
 import user from "./user-circle.svg";
 import contact from "./telegram-plane.svg";
 import works from "./works.svg";
@@ -11,6 +12,7 @@ export {
   logo,
   logoWhite,
   logoBlack,
+  logoTer,
   user,
   contact,
   works,

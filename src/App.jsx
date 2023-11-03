@@ -19,7 +19,7 @@ const App = () => {
   return (
     <BrowserRouter>
       {!isMobile && <Cursor />}
-      <div className="relative z-0 bg-center bg-fixed">
+      <div className="relative z-0 bg-slate-200">
         <div className="z-50">
           <Navbar />
           <Hero />

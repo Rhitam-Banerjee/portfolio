@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#ACC5C5",
+        primary: "#373c4b",
         secondary: "#588B8B",
         tertiary: "#FFAF38",
         white_transparant: "rgba(255,255,255,0.95)",
+        white_transparant_max: "rgba(255,255,255,0.40)",
         primary_transparant: "rgba(172, 197, 197, 0.95)",
         primary_transparant_max: "rgba(172, 197, 197, 0.4)",
         secondary_transparant: "rgba(88, 139, 139, 0.95)",

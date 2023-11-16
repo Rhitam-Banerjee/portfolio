@@ -10,10 +10,10 @@ const About = () => {
     <>
       <motion.div
         variants={textVariant()}
-        className={`max-w-6xl mx-auto w-full flex flex-col sm:justify-center sm:items-center`}
+        className={`max-w-6xl mx-auto w-full flex flex-col sm:justify-center sm:items-center pt-10`}
       >
-        <p className={`${styles.heroSubText} text-primary`}>Introduction</p>
-        <h2 className={`${styles.heroHeadText} text-secondary`}>Overview</h2>
+        <p className={`${styles.heroSubText} text-secondary`}>Introduction</p>
+        <h2 className={`${styles.heroHeadText} text-tertiary`}>Overview</h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}

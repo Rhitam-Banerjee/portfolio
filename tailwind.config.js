@@ -7,7 +7,7 @@ export default {
         primary: "#39425e",
         secondary: "#8C98BA",
         tertiary: "#FFAF38",
-        white_transparant: "rgba(255,255,255,0.95)",
+        white_transparant: "rgba(255,255,255,0.80)",
         white_transparant_max: "rgba(255,255,255,0.40)",
         primary_transparant: "rgba(172, 197, 197, 0.95)",
         primary_transparant_max: "rgba(172, 197, 197, 0.4)",

@@ -7,7 +7,7 @@ const BottomNavar = () => {
     <div className="fixed flex flex-col-reverse bottom-10 left-1/2 w-max max-w-7xl justify-center items-center translate-x-[-50%] z-50">
       <div
         className={`${
-          toggle ? "shadow-none" : "shadow-lg bg-white_transparant_max"
+          toggle ? "shadow-none" : "shadow-lg bg-white_transparant"
         } hamburger-container w-max px-2 py-1 rounded-md cursor-pointer hover:scale-105 transition-all ease-linear delay-50`}
         onClick={() => setToggle(!toggle)}
       >
@@ -16,12 +16,12 @@ const BottomNavar = () => {
       <ul
         className={`translate-y-[-10px] ${
           toggle ? "opacity-100 scale-100" : "opacity-0 scale-0 "
-        } list-none flex flex-row gap-10 bg-white_transparant_max shadow-md px-5 py-3 rounded-lg origin-center transition-all ease-in-out delay-300`}
+        } list-none flex flex-row gap-10 bg-white_transparant shadow-md px-5 py-3 rounded-lg origin-center transition-all ease-in-out delay-300`}
       >
         {navLinks.map((nav) => (
           <li
             key={nav.id}
-            className="text-tertiary hover:text-white text-[18px] font-medium cursor-pointer"
+            className="text-primary hover:text-secondary text-[18px] font-medium cursor-pointer"
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

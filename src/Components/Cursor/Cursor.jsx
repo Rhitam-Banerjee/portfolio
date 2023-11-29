@@ -16,6 +16,7 @@ const Cursor = () => {
     const progress = (currentScroll / scrollHeight) * 100;
     setScrollProgress(progress);
   };
+
   useEffect(() => {
     const handleScroll = () => {
       calculateScrollProgress();
@@ -30,7 +31,7 @@ const Cursor = () => {
 
   useEffect(() => {
     controls.start({
-      strokeDasharray: `${scrollProgress} ${scrollProgress}`,
+      strokeDasharray: `${scrollProgress},100`,
       strokeDashoffset: `0`,
     });
   }, [scrollProgress, controls]);
@@ -38,14 +39,29 @@ const Cursor = () => {
     <>
       <motion.div
         style={{ left: `${x}px`, top: `${y}px` }}
-        className={`fixed top-0 left-0 w-7 h-7 border-[2px] border-primary_transparant rounded-full translate-x-[-50%] translate-y-[-50%] pointer-events-none z-[99] !transition-transform ${
-          changeShape
-            ? "!scale-[2] !border-none bg-primary_transparant_max"
-            : ""
+        className={`fixed top-1/2 left-1/2 h-[30px] w-[30px] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99] ${
+          changeShape ? "!scale-[2]" : ""
         }`}
-        animate={controls}
-        initial={{ strokeDashoffset: `${scrollProgress}` }}
-      ></motion.div>
+      >
+        <motion.svg
+          viewBox="0 0 36 36"
+          width="30"
+          height="30"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.circle
+            className={`stroke-primary_transparant ${
+              changeShape ? "fill-primary_transparant_max" : "fill-none"
+            }`}
+            cx="18"
+            cy="18"
+            r="15"
+            strokeWidth="2"
+            animate={controls}
+            initial={{ strokeDasharray: "0, 100" }}
+          />
+        </motion.svg>
+      </motion.div>
     </>
   );
 };

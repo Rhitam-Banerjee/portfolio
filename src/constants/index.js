@@ -31,3 +31,23 @@ export const services = [
   },
 ];
 // export { navLinks, services };
+export const projects = [
+  {
+    title: "ToDos",
+    // icon:""
+  },
+  {
+    title: "Anime Downloader",
+    // icon:""
+  },
+  {
+    title: "Chat App",
+    // icon:""
+  },
+  {
+    title: "ToDos",
+  },
+  {
+    title: "ToDos",
+  },
+];

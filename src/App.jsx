@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, BottomNavar } from "./Components";
+import { Navbar, Hero, BottomNavar, About } from "./Components";
 import Cursor from "./Components/Cursor/Cursor";
-import About from "./Components/About";
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -26,6 +25,7 @@ const App = () => {
           {isMobile && <BottomNavar />}
         </div>
         <About />
+        {/* <Projects /> */}
       </div>
     </BrowserRouter>
   );

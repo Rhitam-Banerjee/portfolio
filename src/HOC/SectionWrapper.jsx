@@ -11,7 +11,9 @@ const SectionWrapper = (Component, idName, color) =>
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.paddingX} relative z-0 mb-[100px] pb-[2.5rem]
+        className={`${
+          styles.paddingX
+        } relative z-0 mb-[100px] pb-[2.5rem] sm:px-2
           ${color === "white" ? "!bg-transparent" : "!bg-primary"}
         `}
         id={idName}

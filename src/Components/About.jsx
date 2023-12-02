@@ -12,12 +12,18 @@ const About = () => {
         variants={textVariant()}
         className={`max-w-6xl mx-auto w-full flex flex-col sm:justify-center sm:items-center pt-10`}
       >
-        <p className={`${styles.heroSubText} text-secondary`}>Introduction</p>
-        <h2 className={`${styles.heroHeadText} text-tertiary`}>Overview</h2>
+        <p className={`${styles.sectionSubText} text-center text-secondary`}>
+          Introduction
+        </p>
+        <h2
+          className={`${styles.heroHeadText} text-center text-tertiary mb-[20px]`}
+        >
+          Overview
+        </h2>
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className={`max-w-6xl mx-auto sm:text-center`}
+        className={`text-white max-w-6xl mx-auto text-center font-light`}
       >
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolor
         alias explicabo soluta in velit expedita molestiae? Itaque, unde
@@ -34,4 +40,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about");
+export default SectionWrapper(About, "about", "primary");

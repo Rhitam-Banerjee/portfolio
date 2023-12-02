@@ -8,7 +8,7 @@ const ServiceCard = ({ index, title, icon }) => (
   <Tilt className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full rounded-[20px] shadow-md"
+      className="w-full shadow-md"
     >
       <div
         options={{
@@ -16,7 +16,7 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-secondary rounded-[10px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
       >
         <img src={icon} alt={title} className="w-16 h-16 object-contain" />
 

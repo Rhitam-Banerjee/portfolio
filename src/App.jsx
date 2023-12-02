@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, Hero, BottomNavar, About } from "./Components";
+import { Navbar, Hero, BottomNavar, About, Projects } from "./Components";
 import Cursor from "./Components/Cursor/Cursor";
 const App = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -25,7 +25,7 @@ const App = () => {
           {isMobile && <BottomNavar />}
         </div>
         <About />
-        {/* <Projects /> */}
+        <Projects />
       </div>
     </BrowserRouter>
   );

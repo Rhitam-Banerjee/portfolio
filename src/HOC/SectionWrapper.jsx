@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { staggerContainer } from "../utils";
 
-const SectionWrapper = (Component, idName) =>
+const SectionWrapper = (Component, idName, color) =>
   function HOC() {
     return (
       <motion.section
@@ -11,7 +11,9 @@ const SectionWrapper = (Component, idName) =>
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
-        className={`${styles.paddingX} relative z-0 bg-primary`}
+        className={`${styles.paddingX} relative z-0 mb-[100px] pb-[2.5rem]
+          ${color === "white" ? "!bg-transparent" : "!bg-primary"}
+        `}
         id={idName}
       >
         {/* <span className="hash-span" id={idName}>

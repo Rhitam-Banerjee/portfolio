@@ -21,7 +21,7 @@ const BottomNavar = () => {
         {navLinks.map((nav) => (
           <li
             key={nav.id}
-            className="text-primary hover:text-secondary text-[18px] font-medium cursor-pointer"
+            className="text-primary hover:text-secondary text-[16px] font-bold cursor-pointer"
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

@@ -7,6 +7,7 @@ import contact from "./telegram-plane.svg";
 import works from "./works.svg";
 import hamburger from "./hamburger.svg";
 import close from "./close.svg";
+import highlightBg from "./highlightBg.jpg";
 export {
   logo,
   logoWhite,
@@ -17,4 +18,5 @@ export {
   works,
   hamburger,
   close,
+  highlightBg,
 };

@@ -50,7 +50,7 @@ const Cursor = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            className={`stroke-secondary fill-primary_transparant_max`}
+            className={`stroke-white fill-primary_transparant_max`}
             cx="18"
             cy="18"
             r="15"

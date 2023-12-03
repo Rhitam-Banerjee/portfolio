@@ -45,7 +45,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-tertiary" : "text-primary"
+                active === nav.title ? "text-tertiary" : "text-secondary"
               } hover:text-tertiary text-[18px] font-bold cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >

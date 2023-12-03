@@ -12,13 +12,15 @@ export const navLinks = [
     title: "Contact",
   },
 ];
+export const aboutText =
+  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolor alias explicabo soluta in velit expedita molestiae? Itaque, undeaccusantium.";
 export const services = [
   {
     title: "React Web Developer",
     // icon: web,
   },
   {
-    title: "Svelte Native Developer",
+    title: "Svelte Developer",
     // icon: mobile,
   },
   {
@@ -43,6 +45,7 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    projectLink: "",
   },
   {
     title: "Svelte Developer",
@@ -55,6 +58,7 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    projectLink: "",
   },
   {
     title: "Web Designer",
@@ -67,6 +71,7 @@ export const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
+    projectLink: "",
   },
   // {
   //   title: "Full stack Developer",
@@ -79,6 +84,7 @@ export const experiences = [
   //     "Implementing responsive design and ensuring cross-browser compatibility.",
   //     "Participating in code reviews and providing constructive feedback to other developers.",
   //   ],
+  //   projectLink:""
   // },
 ];
 

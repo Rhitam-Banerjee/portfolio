@@ -39,8 +39,10 @@ const ExperienceCard = ({ experience }) => {
       }
     >
       <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <p className="text-primary text-[16px] !font-bold m-0">
+        <h3 className="text-primary text-[24px] font-black">
+          {experience.title}
+        </h3>
+        <p className="text-primary text-[16px] !font-normal m-0">
           {experience.company_name}
         </p>
       </div>
@@ -63,10 +65,10 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center text-tertiary `}>
+        <p className={`${styles.sectionSubText} text-center text-primary `}>
           What I have done so far
         </p>
-        <h2 className={`${styles.heroHeadText} text-primary text-center`}>
+        <h2 className={`${styles.heroHeadText} text-tertiary text-center`}>
           Projects
         </h2>
       </motion.div>

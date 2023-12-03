@@ -13,12 +13,12 @@ const Hero = () => {
       >
         <div>
           <h1
-            className={`${styles.heroHeadText} mr-auto sm:m-auto w-max text-primary`}
+            className={`${styles.heroHeadText} mr-auto sm:m-auto w-max text-secondary`}
           >
             Hi, I&apos;m <br /> <span>Rhitam</span>
           </h1>
           <p
-            className={`${styles.heroSubText} mr-auto sm:m-auto pl-1 text-secondary w-max`}
+            className={`${styles.heroSubText} mr-auto sm:m-auto pl-1 text-tertiary w-max`}
           >
             A <Typewriter />
           </p>

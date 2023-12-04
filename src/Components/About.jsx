@@ -4,13 +4,25 @@ import { fadeIn, textVariant } from "../utils";
 import { styles } from "../styles";
 import ServiceCard from "./Services";
 import { SectionWrapper } from "../HOC";
+// import { useEffect, useRef } from "react";
 
 const About = () => {
+  // const divRef = useRef();
+  // useEffect(() => {
+  //   const handelScroll = () => {
+  //     console.log(divRef.current.getBoundingClientRect().top);
+  //   };
+  //   document.addEventListener("scroll", handelScroll);
+  //   return () => {
+  //     document.removeEventListener("scroll", handelScroll);
+  //   };
+  // });
   return (
     <>
       <motion.div
         variants={textVariant()}
         className={`max-w-6xl mx-auto w-full flex flex-col sm:justify-center sm:items-center pt-10`}
+        // ref={divRef}
       >
         <p className={`${styles.sectionSubText} text-center text-secondary`}>
           Introduction
@@ -38,4 +50,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper(About, "about", "primary");
+export default SectionWrapper(About, "about");

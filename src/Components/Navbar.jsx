@@ -3,7 +3,8 @@ import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants";
 import { logoTer } from "../assets";
-const Navbar = () => {
+// eslint-disable-next-line react/prop-types
+const Navbar = ({ activeLink }) => {
   const [scrolled, setScrolled] = useState(false);
   // const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState("");
@@ -21,6 +22,15 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  useEffect(() => {
+    const handleActiveLink = () => {
+      setActive(activeLink);
+    };
+    window.addEventListener("scroll", handleActiveLink);
+    return () => {
+      window.removeEventListener("scroll", handleActiveLink);
+    };
+  }, [activeLink]);
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 ${
@@ -45,9 +55,9 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-tertiary" : "text-secondary"
+                active === nav.id ? "text-tertiary" : "text-secondary"
               } hover:text-tertiary text-[18px] font-bold cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+              // onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

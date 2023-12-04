@@ -87,4 +87,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper(Experience, "work", "white");
+export default SectionWrapper(Experience, "work");

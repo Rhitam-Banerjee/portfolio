@@ -28,7 +28,7 @@ const App = () => {
       const elements = document.querySelectorAll("section");
       elements.forEach((element, index) => {
         const position = element.getBoundingClientRect();
-        if (position.top <= 150 && position.top > -100) {
+        if (position.top <= 150 && position.top > -200) {
           console.log("top" + position.top);
           console.log("bottom" + position.bottom);
           setActiveNavLink(elements[index].id);

@@ -25,12 +25,6 @@ const App = () => {
   }, []);
   useEffect(() => {
     const handleActiveLink = () => {
-      // const scrollPosition = window.scrollY;
-      // const windowHeight = window.innerHeight;
-
-      // const newActiveSection = Math.floor(scrollPosition / windowHeight);
-      // setActiveNavLink(newActiveSection);
-
       const elements = document.querySelectorAll("section");
       elements.forEach((element, index) => {
         const position = element.getBoundingClientRect();

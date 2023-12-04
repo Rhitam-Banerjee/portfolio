@@ -6,7 +6,6 @@ import { logoTer } from "../assets";
 // eslint-disable-next-line react/prop-types
 const Navbar = ({ activeLink }) => {
   const [scrolled, setScrolled] = useState(false);
-  // const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState("");
   useEffect(() => {
     const handleScroll = () => {

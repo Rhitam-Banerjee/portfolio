@@ -56,11 +56,11 @@ const ExperienceCard = ({ project }) => {
           </li>
         ))}
       </ul>
-      <div className="mt-[1em] flex flex-row justify-between items-center max-w-[300px]">
+      <div className="mt-[1em] flex flex-row sm:flex-col justify-between items-center sm:items-start max-w-[300px]">
         <Link
           to={project.projectLink}
           target="_blank"
-          className="p-[20px] pt-[10px] pb-[10px] bg-primary mr-[20px] rounded-md"
+          className="p-[20px] pt-[10px] pb-[10px] bg-primary mr-[20px] sm:mr-0 sm:mb-[20px] rounded-md"
         >
           View Code
         </Link>

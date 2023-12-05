@@ -1,3 +1,4 @@
+import { webDesign, webDev, programmer, react } from "../assets";
 export const navLinks = [
   {
     id: "about",
@@ -13,65 +14,67 @@ export const navLinks = [
   },
 ];
 export const aboutText =
-  "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit dolor alias explicabo soluta in velit expedita molestiae? Itaque, undeaccusantium.";
+  "Highly motivated Developer with interest in emerging technologies and embracing them to stay at the forefront of the ever-evolving tech landscape. My aim is to design and develop robust web applications with a focus on user which will contribute to a net positive growth of the society as a whole. In my free time, I find solace and inspiration in the world of percussion instruments, it's a way for me to keep my mind fresh and creative. The rhythm and precision required in music mirror my approach to provide solution to such problems.";
 export const services = [
   {
-    title: "React Web Developer",
-    // icon: web,
+    title: "React Developer",
+    icon: react,
   },
   {
-    title: "Svelte Developer",
-    // icon: mobile,
+    title: "Programmer",
+    icon: programmer,
+  },
+  {
+    title: "Web Developer",
+    icon: webDev,
   },
   {
     title: "Web Designer",
-    // icon: backend,
-  },
-  {
-    title: "Content Creator",
-    // icon: backend,
+    icon: webDesign,
   },
 ];
 // export { navLinks, services };
-export const experiences = [
+export const projects = [
   {
-    title: "React.js Developer",
-    company_name: "ABC",
+    title: "Messaging Application",
+    tech_used: "MERN, Socket.io, Axios",
     iconBg: "#fff",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Using MERN Stack for Skeleton",
+      "Instant Messaging Application implementing socket.io for better connectivity",
+      "Axios for handeling API calls",
+      "User Authentication to keep profile locked away from unwanted Guests.",
     ],
-    projectLink: "",
+    projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
+    hasView: true,
   },
   {
-    title: "Svelte Developer",
-    company_name: "ABC",
+    title: "Anime-Puppeteer",
+    tech_used: "Node.js, Puppeteer",
     iconBg: "#fff",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Uses Puppeteer By Google to gather information on a Specific Page to return required details.",
+      "Crawls Specific Webpages to find the downloadable link of Anime.",
+      "Required only user input of the anime link.",
+      "Prompts user for episodes and quality of download.",
     ],
-    projectLink: "",
+    projectLink: "https://github.com/Rhitam-Banerjee/animepahePuppeteer",
+    hasView: false,
   },
   {
-    title: "Web Designer",
-    company_name: "ABC",
+    title: "E-Commerce",
+    tech_used: "MERN Stack, Socket.io, Redux Toolkit",
     iconBg: "#fff",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "A Shopping Application with implementation of MERN Stack for providing a structure.",
+      "Redux Toolkit to provide extra support in managing states of different components.",
+      "Socket.io to improve connection between server and client.",
     ],
-    projectLink: "",
+    projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
+    hasView: true,
   },
   // {
   //   title: "Full stack Developer",
@@ -114,18 +117,3 @@ export const experiences = [
 //     image: "https://randomuser.me/api/portraits/women/6.jpg",
 //   },
 // ];
-
-export const projects = [
-  {
-    title: "ToDos",
-    // icon:""
-  },
-  {
-    title: "Anime Downloader",
-    // icon:""
-  },
-  {
-    title: "Chat App",
-    // icon:""
-  },
-];

@@ -27,8 +27,14 @@ const About = () => {
       >
         {aboutText}
       </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className={`${styles.heroSubText} !mt-20 text-center text-secondary`}
+      >
+        What I am
+      </motion.p>
       <div
-        className={`mt-20 grid grid-cols-2 sm:grid-cols-1 gap-10 max-w-6xl mx-auto place-items-center`}
+        className={`mt-10 grid grid-cols-2 sm:grid-cols-1 gap-10 max-w-6xl mx-auto place-items-center`}
       >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

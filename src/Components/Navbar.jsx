@@ -56,7 +56,7 @@ const Navbar = ({ activeLink }) => {
               className={`${
                 active === nav.id ? "text-tertiary" : "text-secondary"
               } hover:text-tertiary text-[18px] font-bold cursor-pointer`}
-              // onClick={() => setActive(nav.id)}
+              onClick={() => setActive(nav.id)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>

@@ -59,6 +59,7 @@ const ExperienceCard = ({ project }) => {
       <div className="mt-[1em] flex flex-row justify-between items-center max-w-[300px]">
         <Link
           to={project.projectLink}
+          target="_blank"
           className="p-[20px] pt-[10px] pb-[10px] bg-primary mr-[20px] rounded-md"
         >
           View Code
@@ -66,6 +67,7 @@ const ExperienceCard = ({ project }) => {
         {project.hasView && (
           <Link
             to="/"
+            target="_blank"
             className="p-[20px] pt-[10px] pb-[10px] bg-tertiary rounded-md"
           >
             View Project

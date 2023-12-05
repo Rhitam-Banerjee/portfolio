@@ -33,13 +33,12 @@ export const services = [
     icon: webDesign,
   },
 ];
-// export { navLinks, services };
 export const projects = [
   {
     title: "Messaging Application",
     tech_used: "MERN, Socket.io, Axios",
     iconBg: "#fff",
-    date: "March 2020 - April 2021",
+    date: "March 2020 - April 2020",
     points: [
       "Using MERN Stack for Skeleton",
       "Instant Messaging Application implementing socket.io for better connectivity",
@@ -53,7 +52,7 @@ export const projects = [
     title: "Anime-Puppeteer",
     tech_used: "Node.js, Puppeteer",
     iconBg: "#fff",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 2020 - September 2020",
     points: [
       "Uses Puppeteer By Google to gather information on a Specific Page to return required details.",
       "Crawls Specific Webpages to find the downloadable link of Anime.",
@@ -67,7 +66,7 @@ export const projects = [
     title: "E-Commerce",
     tech_used: "MERN Stack, Socket.io, Redux Toolkit",
     iconBg: "#fff",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2021 - Feb 2021",
     points: [
       "A Shopping Application with implementation of MERN Stack for providing a structure.",
       "Redux Toolkit to provide extra support in managing states of different components.",

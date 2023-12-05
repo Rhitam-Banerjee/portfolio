@@ -41,7 +41,7 @@ const Cursor = () => {
         style={{ left: `${x}px`, top: `${y}px` }}
         className={`fixed top-1/2 left-1/2 h-[30px] w-[30px] -translate-x-1/2 -translate-y-1/2 pointer-events-none z-[99] ${
           changeShape ? "!scale-[2]" : "scale-[1.4]"
-        }`}
+        } -rotate-90`}
       >
         <motion.svg
           viewBox="0 0 36 36"

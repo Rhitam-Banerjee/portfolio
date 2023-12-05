@@ -18,7 +18,7 @@ const About = () => {
         <h2
           className={`${styles.heroHeadText} text-center text-tertiary mb-[20px]`}
         >
-          Overview
+          About Me
         </h2>
       </motion.div>
       <motion.p
@@ -31,7 +31,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className={`${styles.heroSubText} !mt-20 text-center text-secondary`}
       >
-        What I am
+        Who I am
       </motion.p>
       <div
         className={`mt-10 grid grid-cols-2 sm:grid-cols-1 gap-10 max-w-6xl mx-auto place-items-center`}

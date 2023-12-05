@@ -22,7 +22,7 @@ const ExperienceCard = ({ project }) => {
         borderRadius: "10px",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #FFAF38" }}
-      dateClassName="text-secondary"
+      dateClassName="text-white"
       date={project.date}
       iconStyle={{
         background: project.iconBg,
@@ -42,7 +42,7 @@ const ExperienceCard = ({ project }) => {
       <div>
         <h3 className="text-primary text-[24px] font-black">{project.title}</h3>
         <p className="text-primary text-[16px] !font-normal m-0">
-          {project.tech_used}
+          <span className="font-black">Tech. Used:</span> {project.tech_used}
         </p>
       </div>
 

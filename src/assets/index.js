@@ -1,3 +1,5 @@
+// bg
+import bg from "./bg.png";
 // nav section icons
 import logo from "./Logo.svg";
 import logoWhite from "./LogoWhite.svg";
@@ -31,6 +33,7 @@ import sqlite from "./sqlite.svg";
 import tailwindcss from "./tailwindcss.svg";
 
 export {
+  bg,
   logo,
   logoWhite,
   logoBlack,

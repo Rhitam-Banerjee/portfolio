@@ -41,7 +41,7 @@ const App = () => {
   return (
     <BrowserRouter>
       {!isMobile && <Cursor />}
-      <div className="relative z-0 bg-primary">
+      <div className="relative z-0 bg-primary bg-hero-Image bg-contain bg-top">
         <div className="z-50">
           <Navbar activeLink={activeNavLink} />
           <Hero />

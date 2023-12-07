@@ -34,9 +34,9 @@ const Navbar = ({ activeLink }) => {
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 top-0 z-20 ${
         scrolled
-          ? "fixed !bg-white_transparant_max shadow-sm"
+          ? "fixed !bg-white_transparant_max shadow-sm backdrop-blur-sm"
           : "absolute shadow-none"
-      } backdrop-blur-sm transition-all`}
+      } transition-all`}
     >
       <div className="w-full flex sm:justify-center justify-between items-center max-w-6xl mx-auto">
         <Link

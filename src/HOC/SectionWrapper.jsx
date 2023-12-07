@@ -13,6 +13,12 @@ const SectionWrapper = (Component, idName) =>
         viewport={{ once: true, amount: 0.25 }}
         className={`${styles.paddingX} relative z-0 mb-[100px] pb-[2.5rem]`}
         id={idName}
+        style={{
+          backgroundImage:
+            idName === "about" || idName === "contact"
+              ? "radial-gradient(#39425e 50%,transparent)"
+              : "radial-gradient(#39425e 20%,transparent)",
+        }}
       >
         {/* <span className="hash-span" id={idName}>
           &nbsp;

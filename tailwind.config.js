@@ -22,7 +22,8 @@ export default {
         sm: { max: "640px" },
       },
       backgroundImage: {
-        "hero-Image": "url('./assets/herobg.png')",
+        "hero-Image": "url('./assets/bg.png')",
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
       keyframes: {
         blink: {

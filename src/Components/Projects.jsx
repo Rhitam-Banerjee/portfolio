@@ -101,11 +101,14 @@ const Experience = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           What tools I use for Projects
         </p>
-        <div>
-          {toolsIcon.map((icon) => {
-            <div>
-              <img src={icon.icon} alt={icon.title} />
-            </div>;
+        <div className="m-auto mt-20 max-w-4xl grid grid-cols-6 place-items-center sm:gap-6 gap-12">
+          {toolsIcon.map((tool) => {
+            const { icon, title } = tool;
+            return (
+              <div key={title}>
+                <img src={icon} alt={title} className="sm:w-8 w-12" />
+              </div>
+            );
           })}
         </div>
       </motion.div>

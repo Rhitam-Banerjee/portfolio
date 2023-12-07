@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { projects } from "../constants";
+import { projects, toolsIcon } from "../constants";
 import { SectionWrapper } from "../HOC";
 import { textVariant } from "../utils";
 import { Link } from "react-router-dom";
@@ -97,10 +97,17 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()} className="mt-20 mb-10">
         <p className={`${styles.sectionSubText} text-center`}>
           What tools I use for Projects
         </p>
+        <div>
+          {toolsIcon.map((icon) => {
+            <div>
+              <img src={icon.icon} alt={icon.title} />
+            </div>;
+          })}
+        </div>
       </motion.div>
     </>
   );

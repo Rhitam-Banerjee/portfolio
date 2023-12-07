@@ -1,28 +1,62 @@
+// nav section icons
 import logo from "./Logo.svg";
 import logoWhite from "./LogoWhite.svg";
 import logoBlack from "./LogoBlack.svg";
 import logoTer from "./LogoTertiary.svg";
-import user from "./user-circle.svg";
-import contact from "./telegram-plane.svg";
-import works from "./works.svg";
 import hamburger from "./hamburger.svg";
 import close from "./close.svg";
+// about section icons
 import webDev from "./webDevelopment.png";
 import webDesign from "./webDesign.png";
 import programmer from "./programmer.png";
 import react from "./react.png";
+// work section icons
+import cpp from "./cpp.svg";
+import bootstrap from "./bootstrap.svg";
+import objectiveC from "./objectiveC.svg";
+import css from "./css.svg";
+import express from "./express.svg";
+import html from "./html.svg";
+import java from "./java.svg";
+import javaScript from "./javaScript.svg";
+import linux from "./linux.svg";
+import materialize from "./materialize.svg";
+import mongodb from "./mongodb.svg";
+import mysql from "./mysql.svg";
+import nodejs from "./nodejs.svg";
+import reactLogo from "./reactLogo.svg";
+import redux from "./redux.svg";
+import sass from "./sass.svg";
+import sqlite from "./sqlite.svg";
+import tailwindcss from "./tailwindcss.svg";
+
 export {
   logo,
   logoWhite,
   logoBlack,
   logoTer,
-  user,
-  contact,
-  works,
   hamburger,
   close,
   webDev,
   webDesign,
   programmer,
   react,
+  cpp,
+  bootstrap,
+  objectiveC,
+  css,
+  express,
+  html,
+  java,
+  javaScript,
+  linux,
+  materialize,
+  mongodb,
+  mysql,
+  nodejs,
+  reactLogo,
+  redux,
+  sass,
+  sqlite,
+  tailwindcss,
 };

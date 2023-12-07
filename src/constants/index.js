@@ -1,4 +1,27 @@
-import { webDesign, webDev, programmer, react } from "../assets";
+import {
+  webDesign,
+  webDev,
+  programmer,
+  react,
+  cpp,
+  bootstrap,
+  objectiveC,
+  css,
+  express,
+  html,
+  java,
+  javaScript,
+  linux,
+  materialize,
+  mongodb,
+  mysql,
+  nodejs,
+  reactLogo,
+  redux,
+  sass,
+  sqlite,
+  tailwindcss,
+} from "../assets";
 export const navLinks = [
   {
     id: "about",
@@ -46,7 +69,7 @@ export const projects = [
       "User Authentication to keep profile locked away from unwanted Guests.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
-    hasView: true,
+    hasView: false,
   },
   {
     title: "Anime-Puppeteer",
@@ -73,23 +96,83 @@ export const projects = [
       "Socket.io to improve connection between server and client.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
-    hasView: true,
+    hasView: false,
   },
-  // {
-  //   title: "Full stack Developer",
-  //   company_name: "ABC",
-  //   iconBg: "#fff",
-  //   date: "Jan 2023 - Present",
-  //   points: [
-  //     "Developing and maintaining web applications using React.js and other related technologies.",
-  //     "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-  //     "Implementing responsive design and ensuring cross-browser compatibility.",
-  //     "Participating in code reviews and providing constructive feedback to other developers.",
-  //   ],
-  //   projectLink:""
-  // },
 ];
-
+export const toolsIcon = [
+  {
+    title: "CPP",
+    icon: cpp,
+  },
+  {
+    title: "Bootstrap",
+    icon: bootstrap,
+  },
+  {
+    title: "C",
+    icon: objectiveC,
+  },
+  {
+    title: "CSS",
+    icon: css,
+  },
+  {
+    title: "Express",
+    icon: express,
+  },
+  {
+    title: "HTML",
+    icon: html,
+  },
+  {
+    title: "Java",
+    icon: java,
+  },
+  {
+    title: "JavaScript",
+    icon: javaScript,
+  },
+  {
+    title: "Linux",
+    icon: linux,
+  },
+  {
+    title: "Materialize",
+    icon: materialize,
+  },
+  {
+    title: "Mongodb",
+    icon: mongodb,
+  },
+  {
+    title: "MySql",
+    icon: mysql,
+  },
+  {
+    title: "Node.js",
+    icon: nodejs,
+  },
+  {
+    title: "React",
+    icon: reactLogo,
+  },
+  {
+    title: "Redux",
+    icon: redux,
+  },
+  {
+    title: "Sass",
+    icon: sass,
+  },
+  {
+    title: "SQL",
+    icon: sqlite,
+  },
+  {
+    title: "TailWindCss",
+    icon: tailwindcss,
+  },
+];
 // const testimonials = [
 //   {
 //     testimonial:

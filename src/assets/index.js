@@ -20,7 +20,7 @@ import css from "./css.svg";
 import express from "./express.svg";
 import html from "./html.svg";
 import java from "./java.svg";
-import javaScript from "./javaScript.svg";
+import javaScript from "./javascript.svg";
 import linux from "./linux.svg";
 import materialize from "./materialize.svg";
 import mongodb from "./mongodb.svg";

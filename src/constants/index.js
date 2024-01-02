@@ -21,6 +21,8 @@ import {
   sass,
   sqlite,
   tailwindcss,
+  ConextPreview,
+  Anime,
 } from "../assets";
 export const navLinks = [
   {
@@ -58,24 +60,28 @@ export const services = [
 ];
 export const projects = [
   {
-    title: "Messaging Application",
+    title: "Conext",
     tech_used: "MERN, Socket.io, Axios",
     iconBg: "#fff",
     date: "March 2020 - April 2020",
+    preview: ConextPreview,
     points: [
+      "Simple Messaging Application",
       "Using MERN Stack for Skeleton",
-      "Instant Messaging Application implementing socket.io for better connectivity",
+      "Instant Messaging Application implementing socket.io for connectivity",
       "Axios for handeling API calls",
       "User Authentication to keep profile locked away from unwanted Guests.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
-    hasView: false,
+    projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
+    hasView: true,
   },
   {
     title: "Anime-Puppeteer",
     tech_used: "Node.js, Puppeteer",
     iconBg: "#fff",
     date: "September 2020 - September 2020",
+    preview: Anime,
     points: [
       "Uses Puppeteer By Google to gather information on a Specific Page to return required details.",
       "Crawls Specific Webpages to find the downloadable link of Anime.",
@@ -83,6 +89,7 @@ export const projects = [
       "Prompts user for episodes and quality of download.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/animepahePuppeteer",
+    projectDemo: "https://github.com/Rhitam-Banerjee/animepahePuppeteer",
     hasView: false,
   },
   {
@@ -90,12 +97,14 @@ export const projects = [
     tech_used: "MERN Stack, Socket.io, Redux Toolkit",
     iconBg: "#fff",
     date: "Jan 2021 - Feb 2021",
+    preview: ConextPreview,
     points: [
       "A Shopping Application with implementation of MERN Stack for providing a structure.",
       "Redux Toolkit to provide extra support in managing states of different components.",
       "Socket.io to improve connection between server and client.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
+    projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
     hasView: false,
   },
 ];

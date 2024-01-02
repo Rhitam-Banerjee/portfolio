@@ -17,7 +17,7 @@ const SectionWrapper = (Component, idName) =>
           backgroundImage:
             idName === "about" || idName === "contact"
               ? "radial-gradient(#39425e 50%,transparent)"
-              : "radial-gradient(#39425e 20%,transparent)",
+              : "",
         }}
       >
         {/* <span className="hash-span" id={idName}>

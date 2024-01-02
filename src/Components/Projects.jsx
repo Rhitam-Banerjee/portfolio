@@ -14,40 +14,52 @@ import { textVariant } from "../utils";
 import { Link } from "react-router-dom";
 
 const ExperienceCard = ({ project }) => {
+  const {
+    date,
+    iconBg,
+    preview,
+    title,
+    tech_used,
+    points,
+    projectLink,
+    projectDemo,
+  } = project;
   return (
     <VerticalTimelineElement
       contentStyle={{
         background: "#8C98BA",
         color: "#fff",
         borderRadius: "10px",
+        boxShadow: "0 0 10px #39425e",
       }}
       contentArrowStyle={{ borderRight: "7px solid  #FFAF38" }}
       dateClassName="text-white"
-      date={project.date}
+      date={date}
       iconStyle={{
-        background: project.iconBg,
+        background: iconBg,
         boxShadow:
           "0 0 0 4px #fff, inset 0 2px 5px rgba(0,0,0,.2), 0 5px 5px rgba(0,0,0,.2)",
       }}
       icon={
-        <div className="flex justify-center items-center w-full h-full ">
-          {/* <img
-            src={project.icon}
-            alt={project.company_name}
-            className="w-[60%] h-[60%] object-contain"
-          /> */}
-        </div>
+        <div className="flex justify-center items-center w-full h-full "></div>
       }
     >
+      <div className="flex justify-center items-center w-full h-full">
+        <img
+          src={preview}
+          alt={title}
+          className="w-[50%] max-w-[300px] h-[60%] object-contain  rounded-xl"
+        />
+      </div>
       <div>
-        <h3 className="text-primary text-[24px] font-black">{project.title}</h3>
+        <h3 className="text-primary text-[24px] font-black">{title}</h3>
         <p className="text-primary text-[16px] !font-normal m-0">
-          <span className="font-black">Tech. Used:</span> {project.tech_used}
+          <span className="font-black">Tech. Used:</span> {tech_used}
         </p>
       </div>
 
       <ul className="mt-5 list-disc ml-5 space-y-2">
-        {project.points.map((point, index) => (
+        {points.map((point, index) => (
           <li
             key={`project-point-${index}`}
             className="text-white-100 text-[14px] pl-1 tracking-wider"
@@ -58,7 +70,7 @@ const ExperienceCard = ({ project }) => {
       </ul>
       <div className="mt-[1em] flex flex-row sm:flex-col justify-between items-center sm:items-start max-w-[300px]">
         <Link
-          to={project.projectLink}
+          to={projectLink}
           target="_blank"
           className="p-[20px] pt-[10px] pb-[10px] bg-primary mr-[20px] sm:mr-0 sm:mb-[20px] rounded-md"
         >
@@ -66,7 +78,7 @@ const ExperienceCard = ({ project }) => {
         </Link>
         {project.hasView && (
           <Link
-            to="/"
+            to={projectDemo}
             target="_blank"
             className="p-[20px] pt-[10px] pb-[10px] bg-tertiary rounded-md"
           >

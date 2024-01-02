@@ -73,7 +73,7 @@ export const projects = [
       "User Authentication to keep profile locked away from unwanted Guests.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
-    projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
+    projectDemo: "https://conextchat.vercel.app/",
     hasView: true,
   },
   {

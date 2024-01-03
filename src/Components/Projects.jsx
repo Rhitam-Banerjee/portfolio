@@ -44,13 +44,15 @@ const ExperienceCard = ({ project }) => {
         <div className="flex justify-center items-center w-full h-full "></div>
       }
     >
-      <div className="flex justify-center items-center w-full h-full">
-        <img
-          src={preview}
-          alt={title}
-          className="w-[50%] max-w-[300px] h-[60%] object-contain  rounded-xl"
-        />
-      </div>
+      {preview && (
+        <div className="flex justify-center items-center w-full h-full">
+          <img
+            src={preview}
+            alt={title}
+            className="w-[50%] max-w-[300px] h-[60%] object-contain  rounded-xl"
+          />
+        </div>
+      )}
       <div>
         <h3 className="text-primary text-[24px] font-black">{title}</h3>
         <p className="text-primary text-[16px] !font-normal m-0">

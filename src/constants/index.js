@@ -61,16 +61,17 @@ export const services = [
 export const projects = [
   {
     title: "Conext",
-    tech_used: "MERN, Socket.io, Axios",
+    tech_used: "MERN, Socket.io, Axios, Bcrypt",
     iconBg: "#fff",
     date: "March 2020 - April 2020",
     preview: ConextPreview,
     points: [
       "Simple Messaging Application",
       "Using MERN Stack for Skeleton",
-      "Instant Messaging Application implementing socket.io for connectivity",
+      "Recent Logged-In or Registered user Details are stored in LocalStorage, thus reducing the hassle of Loging in each time.",
+      "Instant Messaging Application implementing socket.io for connectivity.",
       "Axios for handeling API calls",
-      "User Authentication to keep profile locked away from unwanted Guests.",
+      "User Authentication and Password protection through Bcrypt to keep profile locked away from unwanted Guests.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
     projectDemo: "https://conextchat.vercel.app/",
@@ -93,11 +94,26 @@ export const projects = [
     hasView: false,
   },
   {
+    title: "Pokedex",
+    tech_used: "React, Axios",
+    iconBg: "#fff",
+    date: "June 2021 - June 2021",
+    // preview: ConextPreview,
+    points: [
+      "Everyone's favourite Pokemon Library POKEDEX in here with a new style",
+      "Data fetching through Axios",
+      "Recent serches are stored in LocalStorage and is refreshed on new serches",
+    ],
+    projectLink: "https://github.com/Rhitam-Banerjee/PokeDex",
+    projectDemo: "https://rhitam-banerjee.github.io/PokeDex/",
+    hasView: false,
+  },
+  {
     title: "E-Commerce",
     tech_used: "MERN Stack, Socket.io, Redux Toolkit",
     iconBg: "#fff",
     date: "Jan 2021 - Feb 2021",
-    preview: ConextPreview,
+    // preview: ConextPreview,
     points: [
       "A Shopping Application with implementation of MERN Stack for providing a structure.",
       "Redux Toolkit to provide extra support in managing states of different components.",

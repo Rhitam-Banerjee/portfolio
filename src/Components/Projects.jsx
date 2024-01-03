@@ -111,7 +111,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <motion.div variants={textVariant()} className="mt-20 mb-10">
+      <div className="mt-20 mb-10">
         <p className={`${styles.sectionSubText} text-center`}>
           What tools I use for Projects
         </p>
@@ -125,7 +125,7 @@ const Experience = () => {
             );
           })}
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

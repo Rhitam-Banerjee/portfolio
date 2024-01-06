@@ -104,9 +104,9 @@ export const projects = [
       "Data fetching through Axios",
       "Recent serches are stored in LocalStorage and is refreshed on new serches",
     ],
-    projectLink: "https://github.com/Rhitam-Banerjee/PokeDex",
-    projectDemo: "https://rhitam-banerjee.github.io/PokeDex/",
-    hasView: false,
+    projectLink: "https://github.com/Rhitam-Banerjee/poke",
+    projectDemo: "https://rhitam-banerjee.github.io/poke/",
+    hasView: true,
   },
   {
     title: "E-Commerce",

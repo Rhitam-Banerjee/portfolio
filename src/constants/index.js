@@ -23,6 +23,7 @@ import {
   tailwindcss,
   ConextPreview,
   Anime,
+  Poke,
 } from "../assets";
 export const navLinks = [
   {

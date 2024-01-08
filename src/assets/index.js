@@ -31,8 +31,10 @@ import redux from "./redux.svg";
 import sass from "./sass.svg";
 import sqlite from "./sqlite.svg";
 import tailwindcss from "./tailwindcss.svg";
+// project Preview
 import ConextPreview from "./ConextChatPreview.png";
 import Anime from "./Anime.png";
+import Poke from "./poke.png";
 export {
   bg,
   logo,
@@ -65,4 +67,5 @@ export {
   tailwindcss,
   ConextPreview,
   Anime,
+  Poke,
 };

@@ -23,6 +23,7 @@ import {
   tailwindcss,
   ConextPreview,
   Anime,
+  Poke,
 } from "../assets";
 export const navLinks = [
   {
@@ -98,7 +99,7 @@ export const projects = [
     tech_used: "React, Axios",
     iconBg: "#fff",
     date: "June 2021 - June 2021",
-    // preview: ConextPreview,
+    preview: Poke,
     points: [
       "Everyone's favourite Pokemon Library POKEDEX in here with a new style",
       "Data fetching through Axios",
@@ -106,7 +107,7 @@ export const projects = [
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/PokeDex",
     projectDemo: "https://rhitam-banerjee.github.io/PokeDex/",
-    hasView: false,
+    hasView: true,
   },
   {
     title: "E-Commerce",

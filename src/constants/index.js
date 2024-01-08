@@ -91,7 +91,6 @@ export const projects = [
       "Prompts user for episodes and quality of download.",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/animepahePuppeteer",
-    projectDemo: "https://github.com/Rhitam-Banerjee/animepahePuppeteer",
     hasView: false,
   },
   {
@@ -105,8 +104,8 @@ export const projects = [
       "Data fetching through Axios",
       "Recent serches are stored in LocalStorage and is refreshed on new serches",
     ],
-    projectLink: "https://github.com/Rhitam-Banerjee/PokeDex",
-    projectDemo: "https://rhitam-banerjee.github.io/PokeDex/",
+    projectLink: "https://github.com/Rhitam-Banerjee/poke",
+    projectDemo: "https://rhitam-banerjee.github.io/poke/",
     hasView: true,
   },
   {

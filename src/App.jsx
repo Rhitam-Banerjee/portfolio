@@ -6,7 +6,6 @@ import {
   BottomNavar,
   About,
   Projects,
-  Contact,
 } from "./Components";
 import Cursor from "./Components/Cursor/Cursor";
 const App = () => {
@@ -49,7 +48,6 @@ const App = () => {
         </div>
         <About />
         <Projects />
-        <Contact />
       </div>
     </BrowserRouter>
   );

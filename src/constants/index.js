@@ -34,10 +34,6 @@ export const navLinks = [
     id: "work",
     title: "Work",
   },
-  {
-    id: "contact",
-    title: "Contact",
-  },
 ];
 export const aboutText =
   "Highly motivated Developer with interest in emerging technologies and embracing them to stay at the forefront of the ever-evolving tech landscape. My aim is to design and develop robust web applications with a focus on user which will contribute to a net positive growth of the society as a whole. In my free time, I find solace and inspiration in the world of percussion instruments, it's a way for me to keep my mind fresh and creative. The rhythm and precision required in music mirror my approach to provide solution to such problems.";

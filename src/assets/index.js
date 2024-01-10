@@ -35,6 +35,7 @@ import tailwindcss from "./tailwindcss.svg";
 import ConextPreview from "./ConextChatPreview.png";
 import Anime from "./Anime.png";
 import Poke from "./poke.png";
+import ToDo from "./ToDo.png";
 export {
   bg,
   logo,
@@ -68,4 +69,5 @@ export {
   ConextPreview,
   Anime,
   Poke,
+  ToDo,
 };

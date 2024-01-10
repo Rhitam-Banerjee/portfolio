@@ -24,6 +24,7 @@ import {
   ConextPreview,
   Anime,
   Poke,
+  ToDo,
 } from "../assets";
 export const navLinks = [
   {
@@ -119,17 +120,17 @@ export const projects = [
     projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
     hasView: false,
   },*/
-{
+  {
     title: "Simple-ToDo",
     tech_used: "MERN Stack, Socket.io, Axios",
     iconBg: "#fff",
     date: "Jan 2023 - Feb 2023",
-    // preview: ConextPreview,
+    preview: ToDo,
     points: [
       "A simple ToDo application to keep track of your all tasks.",
       "MERN to provide for structure.",
       "Socket.io to smoothen up connection between server and client",
-"Axios to fetch data from the server and database",
+      "Axios to fetch data from the server and database",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/simpleToDo",
     projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",

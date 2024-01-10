@@ -104,7 +104,7 @@ export const projects = [
     projectDemo: "https://rhitam-banerjee.github.io/poke/",
     hasView: true,
   },
-  {
+  /*{
     title: "E-Commerce",
     tech_used: "MERN Stack, Socket.io, Redux Toolkit",
     iconBg: "#fff",
@@ -118,7 +118,8 @@ export const projects = [
     projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
     projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
     hasView: false,
-  },{
+  },*/
+{
     title: "Simple-ToDo",
     tech_used: "MERN Stack, Socket.io, Axios",
     iconBg: "#fff",

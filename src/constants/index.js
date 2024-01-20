@@ -133,8 +133,8 @@ export const projects = [
       "Axios to fetch data from the server and database",
     ],
     projectLink: "https://github.com/Rhitam-Banerjee/simpleToDo",
-    projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
-    hasView: false,
+    projectDemo: "https://simpleto-do.vercel.app/",
+    hasView: true,
   },
 ];
 export const toolsIcon = [

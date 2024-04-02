@@ -21,6 +21,7 @@ import {
   sass,
   sqlite,
   tailwindcss,
+  BrightR,
   ConextPreview,
   Anime,
   Poke,
@@ -57,6 +58,22 @@ export const services = [
   },
 ];
 export const projects = [
+  {
+    title: "BrightR",
+    tech_used: "React, Flask, SQLAlchemy",
+    iconBg: "#fff",
+    date: "Feb 2024 - Continued",
+    preview: BrightR,
+    points: [
+      "Library Application",
+      "Using React, Flask, SQLAlchemy, JWT, Tailwind",
+      "Persolised Library section for every user",
+      "Books synced from amazon, Good-Reads, New-York-Times, YouTube",
+    ],
+    projectLink: "https://github.com/Rhitam-Banerjee/bright-main",
+    projectDemo: "https://brightr.club/",
+    hasView: true,
+  },
   {
     title: "Conext",
     tech_used: "MERN, Socket.io, Axios, Bcrypt",

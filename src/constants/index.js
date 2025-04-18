@@ -22,6 +22,7 @@ import {
   sqlite,
   tailwindcss,
   BrightR,
+  Xora,
   ConextPreview,
   Anime,
   Poke,
@@ -75,6 +76,17 @@ export const projects = [
     hasView: true,
   },
   {
+    title: "XORA",
+    tech_used: "React, Redux,",
+    iconBg: "#fff",
+    date: "April 2025 - April 2025",
+    preview: Xora,
+    points: ["Single Page Application", "Using React, Tailwind, CLSX"],
+    projectLink: "https://github.com/Rhitam-Banerjee/xora",
+    projectDemo: "https://xora-gg2a.vercel.app/",
+    hasView: true,
+  },
+  {
     title: "Conext",
     tech_used: "MERN, Socket.io, Axios, Bcrypt",
     iconBg: "#fff",
@@ -122,21 +134,6 @@ export const projects = [
     projectDemo: "https://rhitam-banerjee.github.io/poke/",
     hasView: true,
   },
-  /*{
-    title: "E-Commerce",
-    tech_used: "MERN Stack, Socket.io, Redux Toolkit",
-    iconBg: "#fff",
-    date: "August 2022 - September 2022",
-    // preview: ConextPreview,
-    points: [
-      "A Shopping Application with implementation of MERN Stack for providing a structure.",
-      "Redux Toolkit to provide extra support in managing states of different components.",
-      "Socket.io to improve connection between server and client.",
-    ],
-    projectLink: "https://github.com/Rhitam-Banerjee/chatApp",
-    projectDemo: "https://github.com/Rhitam-Banerjee/chatApp",
-    hasView: false,
-  },*/
   {
     title: "Simple-ToDo",
     tech_used: "MERN Stack, Socket.io, Axios",

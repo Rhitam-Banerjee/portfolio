@@ -111,7 +111,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-      <div className="mt-20 mb-10">
+      <div className="pt-20">
         <p className={`${styles.sectionSubText} text-center`}>
           What tools I use for Projects
         </p>

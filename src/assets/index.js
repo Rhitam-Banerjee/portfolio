@@ -33,6 +33,7 @@ import sqlite from "./sqlite.svg";
 import tailwindcss from "./tailwindcss.svg";
 // project Preview
 import BrightR from "./BrightR.png";
+import Xora from "./xora.svg";
 import ConextPreview from "./ConextChatPreview.png";
 import Anime from "./Anime.png";
 import Poke from "./poke.png";
@@ -68,6 +69,7 @@ export {
   sqlite,
   tailwindcss,
   BrightR,
+  Xora,
   ConextPreview,
   Anime,
   Poke,

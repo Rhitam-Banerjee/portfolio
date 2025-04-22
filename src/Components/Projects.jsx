@@ -103,7 +103,6 @@ const Experience = () => {
           Projects
         </h2>
       </motion.div>
-
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="max-w-6xl before:bg-tertiary">
           {projects.map((project, index) => (
